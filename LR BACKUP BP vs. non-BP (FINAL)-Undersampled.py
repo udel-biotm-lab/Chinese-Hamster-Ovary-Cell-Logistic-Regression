@@ -793,7 +793,7 @@ print(final_scoring2)
 
 
 feature_list = final_scoring.append(final_scoring2, ignore_index = True)
-feature_list.sort_values(by = 'Fisher Scores', ascending = False, inplace = True)
+feature_list.sort_values(by = 'Fisher Scores', ascending = True, inplace = True)
 feature_list.to_csv('combinedFeatureListBPFisher.tsv',sep = '\t')
 print(feature_list)
 
