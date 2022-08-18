@@ -402,7 +402,7 @@ rslt_score2 = dict2.sort_values(by = 'scores', ascending = False).reset_index(dr
 rslt_score2.to_csv('eGiftScoringBigramBP.tsv',sep = '\t')
 print(rslt_score2)
 
-#for use in Fisher
+#for use in 
 rslt_score_for_fisher2 = dict2.sort_values(by = 'scores', ascending = False).reset_index(drop = True)
 print(rslt_score_for_fisher2)
 
@@ -599,7 +599,7 @@ for x in range(3500):
 
 rslt_score3["Fisher Scores"] = fisher_list_score
 #print(rslt_score1)
-new_order = rslt_score3.sort_values(by = 'Fisher Scores', ascending = False).reset_index(drop = True)
+new_order = rslt_score3.sort_values(by = 'Fisher Scores', ascending = True).reset_index(drop = True)
 print(new_order)
 
 
@@ -770,7 +770,7 @@ for x in range(1500):
 
 rslt_score4["Fisher Scores"] = fisher_list_score2
 #print(rslt_score1)
-new_order2 = rslt_score4.sort_values(by = 'Fisher Scores', ascending = False).reset_index(drop = True)
+new_order2 = rslt_score4.sort_values(by = 'Fisher Scores', ascending = True).reset_index(drop = True)
 print(new_order2)
 
 
