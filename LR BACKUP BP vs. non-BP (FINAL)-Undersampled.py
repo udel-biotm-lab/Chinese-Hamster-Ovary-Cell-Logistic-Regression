@@ -59,8 +59,9 @@ def processed_abstract(abstract):
 # This is a comment: the 1st abstract value is now stored in the variable abstract
 #- process it and store the tokens in some variable
     NUM_result1 = re.sub(r'\d+','NUMERIC', abstract)
-    PUNC_result1 = re.sub(r'[^A-Za-z0-9-/\s]', ' ', NUM_result1)
-    PMID_token1 = nltk.word_tokenize(PUNC_result1)
+    PUNC_result1 = re.sub(r'[^A-Za-z0-9]', ' ', NUM_result1)
+    Dash_result = re.sub(r'[\s-]+',' ',PUNC_result1)
+    PMID_token1 = nltk.word_tokenize(Dash_result)
     
     #PMID_token1 = nltk.wordpunct_tokenize(PUNC_result1)
        
